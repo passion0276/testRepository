@@ -1,0 +1,398 @@
+.fly{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #888888;
+    clear: both;
+    transition: 0.5s;
+}
+.flybox{
+    display: flex;
+}
+.fly:hover{
+    box-shadow: 5px 5px 15px #888888;
+}
+ .flybox .flyCom{
+    border-right: 2px solid #e2772b;
+    width:25%;
+    height:100%;
+    margin: 20px 0;
+    text-align: center;
+}
+.flybox .flyCom h4{
+    line-height: 200px;
+    font-weight: 300;
+}
+.schedule{
+    margin-left: 25px;
+    margin-top: 25px;
+    width:50%;
+}
+.schedule p{
+    margin-bottom: 0px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+.schedule>div{
+    display: flex;
+    justify-content:space-between;
+    padding:20px 25px;
+}
+.go{
+    border-bottom: 1px solid #e2772b;
+}
+ .flybox .price{
+    margin-left: 25px;
+    width:calc(25% - 75px);
+    margin-top: 80px;
+}
+ .flybox .price .btnF{
+    display: flex;
+     justify-content:center;
+}
+ .flybox .price .btnF>div{
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+}
+ .flybox .price>div:first-child{/*機票資訊內的金額*/
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cancel{
+    background-color: #e2772b;
+    padding: 5px 20px;
+}
+.info{
+    margin-right: 10px;
+    background-color: #577bdb;
+    padding: 5px 20px;
+}
+/*===========飛機票詳細資訊==========*/
+.fly .infobox{
+    margin-top: 40px;
+    padding-bottom: 10px;
+    display: none;
+}
+.fly .infobox .schedule{
+    margin-top: 8px;
+}
+.fly .infobox h5{
+    font-size: 1em;
+}
+.fly .infobox .schedule{
+    width:calc(100% - 50px);
+}
+/*===========飛機票旅客資料=============*/
+.fly .personInfobox{
+    margin: 10px 45px;
+}
+.fly .personInfo{
+    font-weight: 300;
+}
+.fly .personInfobox table{
+    border-collapse: collapse;
+    border-spacing: 5px;
+    margin-bottom: 20px;
+}
+.fly .personInfobox tr{
+    border-bottom: 0.5px solid #cecece;
+}
+.fly .personInfobox td:nth-child(1), .fly .personInfobox td:nth-child(3){
+    width:110px;
+}
+.fly .personInfobox td:nth-child(2), .fly .personInfobox td:nth-child(4){
+    width:180px;
+}
+.fly .personInfobox td{
+    padding:10px 10px;
+}
+/*==========================以下為住宿訂單樣式===========================*/
+.hotel{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #888888;
+    clear: both;
+    transition: 0.5s;
+    padding: 20px;
+}
+.hotel:hover{
+    box-shadow: 5px 5px 15px #888888;
+}
+.hotelbox{
+    display: flex;
+}
+.hotelbox>div:nth-child(1){
+    width: 40%;
+}
+.hotelbox>div:nth-child(1) img{
+    height: 250px
+}
+.hotelbox>div:nth-child(2){
+    width: 40%;
+}
+.hotelbox>div:nth-child(2) p{
+    font-weight: 300;
+}
+.hotelbox>div:nth-child(2) h6{
+    margin-bottom: 0;
+}
+.hotelbox .date{
+    margin-top: 40px;
+    width: 180px;
+}
+.hotelbox .date p:nth-child(2){
+    border-bottom: 1px gray dashed;
+    padding-bottom: 10px;
+}
+.hotelbox>div:nth-child(3){
+    margin-top: 130px;
+    border-left: 2px solid #e2772b;
+    padding-left: 20px;
+}
+.hotelbox .btnH>div{
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    text-align: center;
+}
+.hotelbox .cancel{
+    margin-right: 10px;
+}
+.hotel .infobox{
+    display: none;
+}
+.hotel .infobox>div{
+    display: flex;
+    margin-top: 40px;
+    border-top: 1px solid #e2772b;
+    padding-top: 30px;
+}
+.hotel .infobox>div>div{
+    flex:1 1 0;
+}
+.infobox h5{
+    font-size: 1.2em;
+}
+.hotel .infobox>div table{
+    width: 90%;
+}
+.hotel .infobox>div table tr{
+    border-bottom: 0.5px solid #cecece;
+}
+.hotel .infobox>div table td{
+    padding: 10px 10px;
+}
+/*=========================門票訂單樣式=========================*/
+.ticket{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #888888;
+    clear: both;
+    transition: 0.5s;
+    padding: 20px;
+}
+.ticket:hover{
+    box-shadow: 5px 5px 15px #888888;
+}
+.ticketbox{
+    display: flex;
+}
+.ticketbox>div:nth-child(1){
+    width: 40%;
+}
+.ticketbox>div:nth-child(1) img{
+    height: 250px
+}
+.ticketbox>div:nth-child(2){
+    width: 40%;
+}
+.ticketbox .date{
+    margin-top: 35px;
+    border-bottom: 1px dashed #cecece;
+    width:200px;
+}
+.ticketbox .people{
+    margin-top: 20px;
+    width:200px;
+}
+.ticketbox>div:nth-child(3){
+    margin-top: 150px;
+    border-left: 2px solid #e2772b;
+    padding: 10px 20px;
+}
+.ticketbox .btnT>div{
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    text-align: center;
+}
+/*=========================車票訂單樣式=========================*/
+.traffic table{
+    border-collapse: collapse;
+    border-spacing: 5px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.traffic th{
+    text-align: center !important;
+    padding:5px 0px;
+    background-color: antiquewhite;
+}
+.traffic #mrt th:nth-child(1){
+    width: 140px;
+}
+.traffic #mrt th:nth-child(2){
+    width: 120px;
+}
+.traffic #mrt td:nth-child(3){
+    text-align: left;
+}
+.traffic #mrt th:nth-child(4){
+    width: 90px;
+}
+.traffic #mrt th:nth-child(5){
+    width: 100px;
+}
+.traffic td{
+    border-bottom: 1px dashed black;
+    padding:10px 0px;
+    text-align: center;
+}
+.traffic td{
+    padding:10px 10px;
+}
+.traffic tr:hover{
+    background-color: #d6d6d6;
+}
+.traffic .cancel{
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    text-align: center;
+}
+.traffic #train th:nth-child(7){
+    width: 100px;
+}
+.traffic #highreal th:nth-child(6){
+    width: 100px;
+}
+/*=========================行程樣式=========================*/
+.tourbox{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #888888;
+    transition: 0.5s;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    font-family: "fontAwesome";
+}
+.tourbox:hover{
+    box-shadow: 5px 5px 15px #888888;
+}
+.tourbox>div:nth-child(1){
+    width: 40%;
+}
+.tourbox>div:nth-child(1) img{
+    height: 250px
+}
+.tourbox>div:nth-child(2){
+    width: 55%;
+}
+.tourbox .info{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    color: white;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.tourbox .info:hover{
+    text-decoration: none;
+    background-color: #3458b9;
+}
+.tourbox span.tag{
+    font-size: 0.7em;
+}
+.tourbox .like::before{
+    top:9px;
+}
+.tourbox .special::before{
+    top:9px;
+}
+.tourBtn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+}
+.tourBtn a{
+    display: block;
+    padding:10px 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    color:white;
+    margin-right:10px;
+}
+.tourBtn a:hover{
+    text-decoration: none;
+    color:white;
+}
+.tourBtn .tour{
+    background-color: #577bdb;
+    transition: 0.5s;
+}
+.tourBtn .tour:hover{
+    background-color: #3458b9;
+}
+.tourBtn .diy{
+    background-color: #e2772b;
+    transition: 0.5s;
+}
+.tourBtn .diy:hover{
+    background-color: #c64d18;
+}
+.tourbox .permission_form{
+    position: absolute;
+    top:20px;
+    right:30px;
+}
+/*===============================景點餐廳樣式==============================*/
+.sightbox{
+    font-family: "fontAwesome";
+}
+.sightbox .like::before{
+    right:10px;
+}
+.sightbox .special::before{
+    right:10px;
+}
+
+/*===============================會員資料樣式==============================*/
+#memberbox{
+    text-align: center;
+    padding: 10px 20px;
+}
+input[type="file"]{
+    width: 25%;
+    margin: 10px auto;
+}
+#personInfo{
+    margin:10px auto;
+    width: 60%;
+    text-align: left;
+    border: 1px solid #cecece;
+    box-shadow: 2px 2px 10px #888888;
+    padding: 20px;
+}

@@ -1,0 +1,57 @@
+body{
+    font-family: "微軟正黑體"!important;
+}
+contentM{
+    min-height: 100%;
+}
+
+#content{
+    padding-top: 80px;
+}
+#show h5{
+    background-color: #e2772b;
+    width:150px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+th{
+    text-align: center !important;
+    padding:5px 0px;
+    background-color: antiquewhite;
+}
+td{
+    border-bottom: 1px dashed black;
+    padding:10px 0px;
+    text-align: center;
+}
+td{
+    padding:10px 10px;
+}
+tr:hover{
+    background-color: #d6d6d6;
+}
+table a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #e2772b;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+table a:hover{
+    text-decoration: none;
+    color:black;
+    background-color: #ffba5d;
+}
+footer{
+    margin-top:-50px;
+}

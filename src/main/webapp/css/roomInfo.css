@@ -1,0 +1,205 @@
+body{
+    font-family: "微軟正黑體" !important;
+}
+h4{
+    background-color: #e2772b;   
+    border-radius: 10px;
+    padding:  5px 10px 5px 15px;
+    margin-bottom: 15px;
+    color:white;
+}
+.btnF{
+    position: absolute;
+    bottom:20px;
+}
+.btnF>a{
+    background-color: #e2772b;
+    padding:  5px 20px 5px 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+.btnF .amount_form{
+    margin-bottom: 10px;
+    width:100%;
+}
+/*============照片輪播+MAP================*/
+#infoAll{
+    display: flex;
+    padding-top:62px;
+    padding-bottom: 20px;
+    margin:0 0px 20px 0;
+}
+#infoAll #pic{
+    width:73%;
+    margin-right: 20px;
+}
+.carousel-inner{
+    height:400px !important;
+}
+.carousel-item img{
+    position: absolute;
+    top:-100px;
+}
+#infoAll #map iframe{
+    height:400px;
+    min-width: 400px;
+}
+
+/*=============旅館簡介===============*/
+#detail{
+    margin:10px 70px;
+}
+
+/*=============房型選擇===============*/
+#room{
+    margin:40px 70px 50px;
+}
+#room h4{
+    font-family: "fontAwesome";
+    width: 180px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+#room h4::before{
+    content: "\f236";
+    margin-right: 10px;
+}
+.roombox{
+    display: flex;
+    box-shadow: 2px 2px 10px #888888;
+    padding: 20px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    height:290px;
+}
+.roombox:hover{
+    box-shadow: 5px 5px 15px #5c5c5c;
+}
+#room img{
+    width: 300px;
+    height: 250px;
+}
+.roomInfo{
+    margin-left: 40px;
+    width: 50%;
+}
+.roomPrice{
+    margin-left: 60px;
+    padding-left: 30px;
+    position: relative;
+    border-left: 3px solid #e2772b;
+    width:25%;
+}
+.roomPrice .btnF a{
+    color: white;
+    text-decoration: none;
+}
+
+/*=============飯店設施===============*/
+#service{
+    margin:40px 70px 10px;
+}
+#service h4{
+    font-family: "fontAwesome";
+    width: 180px;
+    margin-right: 15px;
+    color: white;
+}
+#service h4::before{
+    content: "\f2cd";
+    margin-right: 10px;
+}
+#service-box{
+    margin-left: 250px;
+}
+.feature-qroup{
+    border-left:3px solid #e2772b; 
+    margin:20px 80px;
+    font-family: "fontAwesome";
+    position: relative;
+}
+.service-sec{
+    margin: 0 15px;
+}
+.feature-qroup.la::before{
+    content: "\f0ac";
+    color: gray;
+    font-size: 3em;
+    position: absolute;
+    top:-7px;
+    left:-66px;
+}
+.feature-qroup.web::before{
+    content: "\f1eb";
+    color: gray;
+    font-size: 2.5em;
+    position: absolute;
+    left:-68px;
+}
+.feature-qroup.fo::before{
+    content: "\f0f5";
+    color: gray;
+    font-size: 2.5em;
+    position: absolute;
+    left:-62px;
+}
+.feature-qroup.co::before{
+    content: "\f290";
+    color: gray;
+    font-size: 2.5em;
+    position: absolute;
+    left:-62px;
+}
+
+/*=============入住資訊===============*/
+#orderInfo{
+    margin:40px 70px 10px;
+}
+#orderInfo h4{
+    font-family: "fontAwesome";
+    width: 180px;
+    margin-right: 15px;
+    color: white;
+}
+#orderInfo h4::before{
+    content: "\f05a";
+    margin-right: 10px;
+}
+#word{
+    margin-left: 270px;
+}
+.wordbox h5{
+    border-bottom: 1px solid #e2772b;
+    padding-bottom: 5px;
+    width:250px;
+}
+
+/*=============評論=============*/
+#comments{
+    margin:40px 70px 10px;
+}
+#comments h4{
+    font-family: "fontAwesome";
+    width: 120px;
+    margin-right: 15px;
+    color: white;
+}
+#comments h4::before{
+    content: "\f044";
+    margin-right: 10px;
+}
+.commentbox{
+    display: flex;
+    border: 2px solid #e2772b;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.userPic{
+    margin-right: 20px;
+}
+.userPic>img{
+    width:100px;
+    height:100px;
+}

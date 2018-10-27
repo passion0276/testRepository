@@ -1,0 +1,284 @@
+/*======================左上設定=======================*/
+#mainInfo{ 
+    margin-top:80px;
+    margin-bottom: 20px;
+    padding: 0 40px;
+}
+#diyContent{
+    padding: 0 40px;
+    display: flex;
+}
+.fa-trash{
+    background-color:#d3d3d3;
+    padding: 10px 12px;
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.fa-trash:hover{
+    background-color:#6f6a66;
+    color:white;
+}
+.fa-floppy-o{
+    background-color:#e2772b;
+    padding: 9px 11px;
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.fa-floppy-o:hover{
+    background-color:#e26207;
+    color:white;
+}
+
+/*======================左側主畫面=======================*/
+#show{
+    width:60%;
+    margin-right: 20px;
+}
+
+/*旅程敘述*/
+.Thead{
+    position: relative;
+    background-color: #70a2e6;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    font-family: "fontAwesome";
+}
+.Thead h5{
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+.arrowUp::after{
+    content: "\f106";
+    font-size: 1.5em;
+    position: absolute;
+    top:2px;
+    right:20px;
+    cursor: pointer;
+}
+.arrowDown::after{
+    content: "\f107";
+    font-size: 1.5em;
+    position: absolute;
+    top:2px;
+    right:20px;
+    cursor: pointer;
+}
+.telescop .form-group{
+    display: none;
+}
+
+/*控制天數*/
+#days{
+    display: flex;
+    width:100%;
+    overflow: scroll;
+    overflow-x:hidden;
+    overflow-y:auto;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    padding: 10px;
+}
+.control{
+    position: absolute;
+    top:18px;
+    right:0px;
+}
+.control .fa-plus{
+    border: 1px solid #ffae75;
+    color: #ffae75;
+    padding: 5px 7px;
+    margin-right: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.control .fa-plus:active{
+    background-color: #ffae75;
+    color:white;
+}
+.control .fa-minus{
+    border: 1px solid #70a2e6;
+    color: #70a2e6;
+    padding: 5px 7px;
+    margin-right: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.control .fa-minus:active{
+    background-color: #70a2e6;
+    color:white;
+}
+.daymark{
+    padding:8px 10px;
+    background-color: #70a2e6;
+    margin-right: 5px;
+    border-radius: 40px;
+    color: white;
+}
+
+/*每日安排*/
+.diybox{/*外框*/
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #d3d3d3;
+}
+.daybox{
+    margin:40px 0;
+}
+.dayInfo{
+    display: flex;
+}
+.daybox h3{/*day圈圈*/
+    cursor: pointer;
+    background-color: #e2772b;
+    font-size: 2em;
+    color:white;
+    font-family:monospace;
+    letter-spacing: 0.1em;
+    width:100px;
+    height:100px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 100px;
+    margin-bottom: 0;
+}
+.daySchedule{/*每日內容外框*/
+    border-left: 3px solid #e2772b;
+    margin-left: 50px;
+    display: none;
+}
+.dayword{/*每日內容內框*/
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.dayInfo{/*景點介紹外框*/
+    padding: 20px;
+    box-shadow: 2px 2px 10px #888888;
+    width: 100%;
+}
+.dayInfo>div:nth-child(1)>div:nth-child(1){/*圖片遮罩*/
+    width:200px;
+    height:150px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.dayInfo>div img{
+    width:200px;
+}
+.dayInfo>div:nth-child(2){/*內文框*/
+    margin-left: 20px;
+    width: 100%;
+    position: relative;
+}
+.dayInfo>div:nth-child(2) i{
+    position: absolute;
+    bottom:8px;
+    right:10px;
+}
+
+/*======================交通盒子==========================*/
+.trafficbox{
+    display: flex;
+    align-items:center;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-left:40px;
+}
+.traffic{
+    width: 90%;
+    display: flex;
+    align-items:center;
+    height: 50px;
+}
+.traffic>h5{
+    line-height: 72px;
+    margin-bottom: 0;
+}
+.traffic .buyTicket{
+    cursor: pointer;
+    border:1px solid #6f6a66;
+    color:#6f6a66;
+    text-align: center;
+    padding:10px;
+    transition: 0.3s;
+    font-weight: 300;
+    font-size: 0.8em;
+    height: 40px;
+}
+.traffic .buyTicket:hover{
+    background-color:#6f6a66;
+    color:white;
+}
+/*======================右側輔助畫面=======================*/
+#mapInfo{
+    width:40%;
+    font-size:90%;
+}
+.mapbox{
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #d3d3d3;
+    transition: 0.5s;
+}
+.mapbox h5>span{
+    cursor: pointer;
+}
+.mapbox h5>span:hover{
+    color: gray;
+}
+.chose{
+    font-weight: 600;
+}
+.nonchose{
+    font-weight: 300;
+}
+.sight{/*收藏區塊*/
+    border-bottom: 1px dashed lightgray;
+    padding-bottom: 15px;
+    margin-bottom: 20px;   
+}
+.rest{
+    background-color: #e2772b;
+}
+.point{
+    background-color: darkgray;
+}
+#likeSpace{
+    height:400px;
+    overflow: scroll;
+    margin-top:5px;
+}
+.sightbox{
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px #888888;
+    margin:10px;
+    padding: 10px;
+    display: flex;
+}
+.sightbox>div img{
+    width:100px;
+}
+.sightbox>div:nth-child(2){/*內文框*/
+    margin-left: 20px;
+    width: 100%;
+    position: relative;
+}
+.sightbox>div:nth-child(2) i{
+    position: absolute;
+    color: #e2772b;
+    font-size: 1.5em;
+    bottom:0px;
+    right:5px;
+}
+.searchbox{
+    display: none;
+}
+.googlemap{/*谷歌地圖區塊*/
+    
+}

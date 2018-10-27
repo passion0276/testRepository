@@ -1,0 +1,117 @@
+h3{
+    letter-spacing: 0.1em;
+}
+#infoAll{
+    display: flex;
+    padding-top:80px;
+    padding-bottom: 20px;
+    margin:0 70px 20px;
+}
+#infoAll>div{
+    flex:0 0 1;
+}
+#infoAll #pic{
+    width:60%;    
+}
+#infoWord{
+    padding-top: 20px;
+    font-family: "fontAwesome";
+    position: relative;
+}
+#infoWord h3{
+    background-color: #e2772b;
+    width: 190px;
+    border-radius: 10px;
+    padding:  5px 10px 5px 15px;
+    color:white;
+}
+#infoWord h3::before{
+    content: "\f041";
+    font-size:0.9em;
+    margin-right: 15px;
+    color: white; 
+}
+#infoWord p{
+    margin-bottom: 5px;
+}
+.like:before{
+    top:15px;
+    right: 0px;
+}
+.special::before{
+    top: 15px;
+    right: 0px;
+}
+#infoAll #infoWord{
+    margin-left:30px;
+    width:35%;
+}
+#detail{
+    padding:20px 70px;
+    font-family: "fontAwesome";
+    border-top: 2px dashed #e2772b;
+    border-bottom: 2px dashed #e2772b;
+}
+#detail h3{
+    background-color: #e2772b;
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px 10px 5px 15px;
+    margin-bottom: 15px;
+    color:white;
+}
+#detail h3::before{
+    content: "\f083";
+    font-size:0.9em;
+    margin-right: 15px;
+    color: white; 
+}
+#comments{
+    padding: 40px 70px 50px;
+}
+#comments h3{
+    background-color: #e2772b;
+    width: 140px;
+    border-radius: 10px;
+    padding:  5px 10px 5px 15px;
+    margin-bottom: 15px;
+    font-family: "fontAwesome";
+    color:white;
+}
+#comments h3::before{
+    content: "\f044";
+    font-size:0.9em;
+    margin-right: 15px;
+    color: white; 
+}
+.commentbox{
+    display: flex;
+    border: 2px solid #e2772b;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.userComment{
+    width:calc(100% - 150px);
+}
+.userPic{
+    margin-right: 20px;
+}
+.userPic>img{
+    width:100px;
+    height:100px;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}

@@ -1,0 +1,346 @@
+#content{/*撇除footernavbar的中間部分*/
+      clear: both;
+}
+nav{
+    background-color: rgba(255, 255, 255, 0.54);
+}
+#search{
+    padding: 70px 10px 10px 10px;
+    background-color: #e2772b;    
+}
+#search .container{
+    max-width:none;
+    margin:0;
+}
+#search .container [class^="col"]{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*=========左側條件欄控制=========*/
+.where{
+    width: 20%;
+    float: left;
+    margin-left: 20px;
+}
+.where .card-header h5 button{
+    color:#e2772b;
+}
+.where .checkC button{
+    border: none;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    color:#e2772b;
+}
+.where .checkC #selectAll{
+    border-right: 1px solid #e2772b;
+    padding-left: 0;
+}
+/*================左側出發時間控制===============*/
+.ui-slider-horizontal {
+  height: 7px !important;
+  background: #d7d7d7;
+  clear: both;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+.ui-widget-content{/*覆蓋jQuery.ui對總長度的控制*/
+    border: none !important;
+    background: #c4c4c4 !important;
+}
+.ui-slider-horizontal .ui-slider-range {
+  top: -1px;
+  height: 100%;
+}
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  height: 7px;
+  font-size: 0.7em;
+  display: block;
+  border-radius: 6px;
+  background-size: 100%;
+  background-color: #e2772b;
+}
+.ui-slider .ui-slider-handle {
+  border-radius: 50%;
+  background-color: #f9fbfa;
+  width: 22px;
+  height: 22px;
+}
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  cursor: default;
+  border: none;
+  cursor: pointer;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{/*覆蓋jQuery.ui對兩顆按鈕的顏色控制*/
+    background: white !important;
+    box-shadow: 1px 1px 4px #c4c4c4;
+}
+.ui-slider-horizontal .ui-slider-handle {/*覆蓋jQuery.ui對兩顆按鈕的位置控制*/
+  top: -0.4em !important;
+  margin-left: -0.6em;
+}
+.ui-slider a:focus {
+  outline: none;
+}
+
+#slider-range, #slider-rangeE, #slider-rangeAll {
+  width: 90%;
+  margin: 0 auto;
+}
+#time-range, #time-rangeE, #slider-rangeAll {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*右側欄位控制*/
+main{
+    width: calc(80% - 70px);
+    float: right;
+    margin: 0 25px;
+}
+#orderby{/*排序方式*/
+    float:right;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+#show{/*右側資訊欄*/
+    clear: both;
+}
+
+/*===========顯示機票資訊===========*/
+#show .fly{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #888888;
+}
+#show .fly:hover{
+    box-shadow: 5px 5px 15px #888888;
+}
+#show .flybox{
+    display: flex;
+}
+#show .flybox>h4{
+    border-right: 2px solid #e2772b;
+    width:25%;
+    height:80%;   
+    margin-top: 20px;
+    text-align: center;
+    line-height: 200px;
+    font-weight: 300;
+}
+.schedule{
+    margin-left: 25px;
+    margin-top: 25px;
+    width:50%;
+}
+.schedule p{
+    margin-bottom: 0px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+.schedule>div{
+    display: flex;
+    justify-content:space-between;
+    padding:20px 25px;
+}
+.go{
+    border-bottom: 1px solid #e2772b;
+}
+#show .flybox .price{
+    margin-left: 25px;
+    width:calc(25% - 75px);
+    margin-top: 80px;
+}
+#show .flybox .price .btnF{
+    display: flex;
+}
+#show .flybox .price .btnF>div{
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+}
+#show .flybox .price>div:first-child{/*機票資訊內的金額*/
+    text-align: center;
+    margin-bottom: 20px;
+}
+#show .flybox .price .btnF .orderFly{
+    background-color: #e2772b;
+    padding: 5px 20px;
+}
+#show .flybox .price .btnF .info{
+    margin-left: 10px;
+    background-color: #577bdb;
+    padding: 5px 20px;
+}
+#show .flybox .price .btnF .orderFly a{
+    color: white;
+}
+/*===========飛機票詳細資訊==========*/
+.infobox{
+    height: 240px;
+    display: none;
+}
+.infobox .schedule{
+    margin-top: 8px;
+}
+.infobox h5{
+    font-size: 1em;
+}
+#show .infobox .schedule{
+    width:calc(100% - 50px);
+}
+
+/*==========顯示住宿資訊============*/
+#show .hotelbox{
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 10px #888888;
+    height: 300px;
+    clear: both;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+#show .hotelbox:hover{
+    box-shadow: 5px 5px 15px #888888;   
+}
+#show .hotelbox>div:first-of-type{/*照片*/
+    width:400px;
+    height:300px;
+    overflow: hidden;
+    margin:0 20px 0 0;
+    float: left;
+}
+#show .hotelbox>div:last-of-type{/*右側說明區塊*/
+    float: left;
+    width: calc(100% - 500px);
+    margin:20px 20px 0 10px;
+}
+#show .hotelbox .btnH .info{/*查看房型按鈕*/
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    background-color: #e2772b;
+    padding: 10px 20px;
+    width:25%;
+    text-align: center;
+    float: right;
+}
+#show .hotelbox .btnH .info a{/*查看房型按鈕*/
+    color:white;
+    
+}
+/*=========加入收藏==========*/
+.like::before{/*加入收藏鈕(未收藏)*/
+    content: "\f08a";
+    font-size:2.3em;
+    position: absolute;
+    color: gray;
+    cursor: pointer;
+}
+.special::before{/*加入收藏鈕(已收藏)*/
+    content: "\f004";
+    font-size:2.3em;
+    position: absolute;
+    color: #e2772b;
+    cursor: pointer;
+}
+
+/*=========旅程資訊==========*/
+#show .tourbox{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #888888;
+    height: 280px;
+    clear: both;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    position: relative;
+    font-family: "fontAwesome";
+}
+.tourbox .like::before{
+    top:15px;
+    right:15px;
+}
+.tourbox .special::before{
+    top:15px;
+    right:15px;
+}
+#show .tourbox:hover{
+    box-shadow: 5px 5px 15px #888888;   
+}
+#show .tourbox>div:first-of-type{/*照片*/
+    width:300px;
+    height:230px;
+    overflow: hidden;
+    margin:25px;
+    float: left;
+}
+#show .tourbox>div:last-of-type{/*右側說明區塊*/
+    float: left;
+    width: calc(100% - 400px);
+    height:calc(100% - 60px);
+    margin:30px 20px 0 10px;
+    position: relative;
+}
+
+#show .tourbox .info{/*查看房型按鈕*/
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    background-color: #e2772b;
+    padding: 10px 10px;
+    width:20%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+#show .tourbox .info a{/*查看房型按鈕*/
+    color:white;
+    
+}
+.btnT p{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+/*==========景點餐廳===========*/
+#contentS{
+    position: relative;
+    clear: both;
+}
+main #show .card{
+    font-family: "fontAwesome";
+    position: relative;
+}
+#show .card .like::before{
+    right: 10px;
+    opacity: 0.9;
+}
+#show .card .special::before{
+    right: 10px;
+    opacity: 0.9;
+}
+#changeSR{
+    margin-left: 25px;
+    position: absolute;
+    top:-30px;
+    width: 50%;
+}
+#changeSR .tag:nth-child(1){
+    background-color: #b1b1b1;
+    margin-right: 3px;
+    font-size: 20px;
+}
+#changeSR .tag:nth-child(2){
+    background-color: #b1b1b1;
+    font-size: 20px;
+}

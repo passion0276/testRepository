@@ -1,0 +1,153 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "微軟正黑體" !important;
+}
+.loginbtn,.logoutbtn{
+    position: fixed;
+    top:2px;
+    right:20px;
+    z-index: 100;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.loginbtn:hover,.logoutbtn:hover{
+    color:white;
+}
+/*=============導覽列=============*/
+nav{
+    position:absolute;
+    /*background-color: rgba(255, 255, 255, 0.54);*/
+    background-color: #e2772b;
+    width: 100%;
+    padding-left: calc(50% - 550px);
+    z-index: 99;
+    top:0;
+}
+nav h1{
+    float: left;
+    font-size: 2em;
+    margin-right: 50px;
+    text-decoration: none;
+}
+nav h1 a{
+    display: block;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+}
+nav h1 a:hover{
+    color:black;
+    text-decoration: none;
+}
+nav ul{
+    position: relative;
+    display:flex;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    width:70%;
+}
+nav li{
+    flex: 1;
+}
+nav>ul>li>a{
+    display: block;
+    text-align:center;
+    color:black;
+    line-height: 60px;
+    transition: 0.5s;
+}
+nav>ul>li>a:hover{
+    background-color: rgba(145, 145, 145, 0.65);
+    text-decoration: none;
+    color:white;
+}
+.line{/*控制滑入導覽列會出現的底線*/
+    width:0%;
+    height:2px;
+    background-color:white;
+    display: block;
+}
+#user{
+    font-size: 0.9em;
+    margin-top: 10px;
+    position: absolute;
+    top:2px;
+    right:20px;
+    z-index: 100;
+    font-size: 0.9em;
+    transition: 0.3s;
+    height:40px;
+}
+#userPic{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right:5px;
+}
+#userPic img{
+    width: 40px;
+}
+/*==========================*/
+
+footer{
+    clear: both;
+    background-color: #e2772b;
+    font-size: 0.7em;
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+}
+/*============類別tag+顏色設定==============*/
+.tag{
+    font-size:16px;
+    border-radius: 20px;
+    color: white;
+    letter-spacing: 0.05em;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+.tag.child{/*親子*/
+    background-color: #ffb37c;
+}
+.tag.family{/*家族*/
+    background-color: #ba171d;
+}
+.tag.couple{/*情侶*/
+    background-color: #ffb4e8;
+}
+.tag.flower{/*賞花*/
+    background-color: #e04373;
+}
+.tag.food{/*美食*/
+    background-color: #6b99e3;
+}
+.tag.culture{/*文化*/
+    background-color: #8e4c1c;
+}
+.tag.play{/*遊樂園*/
+    background-color: #2d75be;
+}
+/*==========收藏愛心控制（要另外加上font-family: "fontAwesome"）===========*/
+.like::before{/*加入收藏鈕(未收藏)*/
+    content: "\f08a";
+    font-size:2.3em;
+    position: absolute;
+    color: gray;
+    cursor: pointer;
+}
+.special::before{/*加入收藏鈕(已收藏)*/
+    content: "\f004";
+    font-size:2.3em;
+    position: absolute;
+    color: #e2772b;
+    cursor: pointer;
+}
+
+textarea{
+    resize: none !important;
+}

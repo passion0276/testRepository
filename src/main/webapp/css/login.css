@@ -1,0 +1,105 @@
+/*=========================登入畫面=========================*/
+.login{
+    z-index: 999;
+    background-color: rgba(105, 105, 105, 0.82);
+    width:100%;
+    height:100%;
+    position: fixed;
+    display: none;
+    top:0;
+}
+.loginbox{
+    width:420px;
+    padding:20px;
+    background-color: rgba(255, 255, 255, 0.72);
+    border-radius: 10px;
+    margin:50px auto;
+    position: relative;
+    height: 450px;
+}
+.loginbox .form-group{
+	margin-bottom:2px;
+}
+.loginbox .form-group label{
+	margin-bottom:0px;
+}
+.regisBtn{
+    position: absolute;
+    bottom: -40px;
+    background-color: #bfbfbf;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    left:0px;
+    padding: 20px 0;
+    margin-bottom: 0;
+    border-radius: 0 0 10px 10px;
+    color:#585858;
+}
+.regisBtn:hover{
+    color: black;
+}
+.login .fa-times{
+    color: darkgray;
+    cursor: pointer;
+    font-size: 3em;
+    position: absolute;
+    top:15px;
+    right:20px;
+    transition: 0.3s ease-in-out;
+}
+.login .fa-times:hover{
+    transform: rotate(180deg);
+    color:white;
+}
+/*第三方登入按鈕控制*/
+#thirdLogin{
+    display: flex;
+}
+#thirdLogin>div{
+    font-family: "fontAwesome";
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#thirdLogin>div span{
+    font-family: "微軟正黑體";
+}
+.fbLogin::before{
+    content: "\f09a";
+    margin-right: 10px;
+    
+}
+.fbLogin{
+    background-color: #3b5998;
+    padding: 10px 0;
+    text-align: center;
+    width:48%;
+    margin-right: 10px;
+}
+.ggLogin::before{
+    content: "\f1a0";
+    margin-right: 10px;
+}
+.ggLogin{
+    background-color: #dd4b39;
+    padding: 10px 0;
+    text-align: center;
+    width:48%;
+}
+.reg{
+    height: 530px;
+    display: none;
+    margin-top:20px;
+}
+/*========語言========*/
+#language{
+    z-index: 998;
+    display: flex;
+    width:10%;
+    position: absolute;
+    right:0px;
+}
+#language a{
+    color:white;
+}

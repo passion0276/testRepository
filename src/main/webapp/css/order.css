@@ -1,0 +1,204 @@
+#orderContent{
+    margin-top:80px;
+    padding: 0 40px;
+    display: flex;
+}
+/*=====================進度條=====================*/
+#progress{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+#step1{
+    background-color: #e2772b;
+    font-size: 1.3em;
+    color:white;
+    font-family:monospace;
+    letter-spacing: 0.1em;
+    width:100px;
+    height:100px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 100px;
+    margin-bottom: 0;
+}
+.steps{
+    background-color: #d3d3d3;
+    font-size: 1.3em;
+    color:black;
+    font-family:monospace;
+    letter-spacing: 0.1em;
+    width:100px;
+    height:100px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 100px;
+    margin-bottom: 0;
+}
+#stepEnd{
+    background-color: #d3d3d3;
+    font-size: 1.3em;
+    color:black;
+    font-family:monospace;
+    letter-spacing: 0.1em;
+    width:100px;
+    height:100px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 100px;
+    margin-bottom: 0;
+}
+.progressline{
+    border-bottom: 4px solid #e2772b;
+    width: calc((100% - 300px)/4);
+    margin-bottom: 48px;
+}
+#progress .progressline:nth-child(3){
+    border-bottom: 4px solid #d3d3d3;
+}
+#progress .progressline:nth-child(5){
+    border-bottom: 4px solid #d3d3d3;
+}
+#progress .progressline:nth-child(6){
+    border-bottom: 4px solid #d3d3d3;
+}
+/*=====================旅客資訊=====================*/
+#show{
+    width:70%;
+    margin-right: 20px;
+}
+.keybox{
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #d3d3d3;
+}
+.keybox h5{
+    background-color: #e2772b;
+    padding: 5px 10px;
+    width:170px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.keybox div:last-child a{
+    color: black;
+}
+.keybox div:last-child a:hover{
+    text-decoration: none;
+}
+.key{
+    position: relative;
+}
+.key h6{
+    cursor: pointer;
+    border:1px solid #6f6a66;
+    color:#6f6a66;
+    width:120px;
+    text-align: center;
+    padding:10px;
+    position: absolute;
+    right:5px;
+    transition: 0.3s;
+    font-weight: 400;
+}
+.key h6:hover{
+    background-color:#6f6a66;
+    color:white;
+}
+.keybox .key{
+    border-top:1px solid #e2772b;
+    padding: 20px 10px;
+}
+.keybox .agree{
+    border-top:1px solid #e2772b;
+    padding: 20px 10px;
+}
+.agree>div:nth-child(1){
+    height: 200px;
+    overflow: scroll;
+    border: 1px solid lightgray;
+    padding:10px 5px;
+}
+/*=====================機票資訊=====================*/
+#flightInfo{
+    width:30%;
+}
+.flybox{
+    margin-bottom: 20px;
+    margin-top:120px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #d3d3d3;
+    transition: 0.5s;
+}
+
+/*去程回程內容設定*/
+.orderInfo{
+    padding-bottom: 20px;
+    border-bottom: 1px dashed gray;
+    margin-bottom: 20px;
+}
+.orderInfo>div:nth-child(2){/*航空公司圖片遮罩*/
+    height:100px;
+    overflow: hidden;
+    text-align: center;
+}
+.orderInfo>div:nth-child(2) img{/*航空公司圖片*/
+    width: 180px;
+}
+
+/*機票資訊框架*/
+.orderInfo>div:nth-child(3){
+    display: flex;
+    justify-content:space-between;
+}
+.orderInfo>div:nth-child(3)>div{
+    padding: 0 12px;
+}
+.orderInfo>div:nth-child(3) p{
+    margin-bottom: 0;
+}
+.orderInfo>div:nth-child(3)>div:nth-child(2) {
+    text-align: center;
+}
+
+/*機票資訊金額*/
+.total table{
+    width: 100%;
+}
+.total td{
+    padding:5px 10px;
+}
+.total td:nth-child(2){
+    text-align: right;
+}
+.total tr:nth-child(3){
+    background-color: #d3d3d3;
+}
+
+/*=====================付款資訊=====================*/
+.paybox{
+    border-top: 1px solid #e2772b;
+    padding: 20px;
+}
+
+/*=====================交易完成資訊=====================*/
+.commitbox{
+    border-top: 1px solid #e2772b;
+    padding: 20px;
+}
+.checkInfo{
+    border-collapse: collapse;
+    border-spacing: 5px;
+    margin-bottom: 40px;
+    width: 60%;
+}
+.commitbox h6{
+    padding:8px;
+    background-color: antiquewhite;
+}
+.checkInfo td{
+    border-bottom: 1px dashed black;
+    padding:10px 0px;
+}
+.rightbtn{
+   justify-content:flex-end;
+}

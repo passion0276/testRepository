@@ -1,0 +1,100 @@
+#mainbox{
+    padding-top:80px;
+    margin:0 150px;
+}
+.like::before{/*加入收藏鈕(未收藏)*/
+    top:-13px;
+    left:180px;
+    color: gray;
+}
+.special::before{/*加入收藏鈕(已收藏)*/
+    font-size:2.3em;
+    top:-13px;
+    left:180px;
+    color: #e2772b;
+}
+/*======================旅程簡介========================*/
+#tourInfo{
+    display: flex;
+}
+#tourInfo .image{
+    overflow: hidden;
+    height: 250px;
+}
+#tourInfo div:nth-child(2){/*旅程簡介文字部分*/
+    margin-left:20px;
+    width:60%;
+    position: relative;
+    font-family: "fontAwesome";
+}
+
+/*======================每日安排========================*/
+#main{
+    clear: both;
+    margin-left: 20px;
+}
+.daybox{
+    margin:40px 0;
+}
+.dayInfo{
+    display: flex;
+}
+.daybox h3{/*day圈圈*/
+    cursor: pointer;
+    background-color: #e2772b;
+    font-size: 2em;
+    color:white;
+    font-family:monospace;
+    letter-spacing: 0.1em;
+    width:100px;
+    height:100px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 100px;
+    margin-bottom: 0;
+}
+.daySchedule{/*每日內容外框*/
+    border-left: 3px solid #e2772b;
+    margin-left: 50px;
+    display: none;
+}
+.dayword{/*每日內容內框*/
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.time{/*遊玩時間*/
+    text-align: center;
+    margin-right: 20px;
+    height: 72px;
+}
+.dayInfo{/*景點介紹外框*/
+    width:90%;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #888888;
+}
+.dayInfo div:nth-child(1){/*圖片遮罩*/
+    width:280px;
+    height:200px;
+    overflow: hidden;
+}
+.dayInfo div:nth-child(2){/*內文框*/
+    margin-left: 20px;
+    width: calc(100% - 300px);
+}
+
+/*======================交通盒子==========================*/
+.trafficbox{
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.traffic{
+    border: 1px solid lightgray;
+    width: 90%;
+    text-align: center;
+}
+.traffic>h5{
+    line-height: 72px;
+    margin-bottom: 0;
+}

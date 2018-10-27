@@ -1,0 +1,97 @@
+#contentM{
+    display: flex;
+    padding-top:62px;
+}
+.where{
+    padding-top: 20px;
+    width:18%;
+    border-right: 3px solid #e2772b;
+    position: fixed;
+    margin-left:0;
+}
+.where ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+.where ul li a{
+    display: block;
+    padding: 8px 10px;
+    background-color: white;
+    transition: 0.5s;
+    text-align: center;
+    color: black;
+    transition: 0.5s;
+}
+.where ul li a:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #e2772b;   
+}
+#main{
+    width: calc(80% - 70px);
+    margin-left: 22%;
+    position: relative;
+}
+#show{
+    padding-top:20px;
+}
+#order_info{
+ margin-top: 20px;   
+}
+.titleh5{
+    background-color: #e2772b;
+    width: 130px;
+    border-radius: 10px;
+    padding:5px 0;
+    margin-bottom: 15px;
+    color:white;
+    text-align: center;
+}
+#noData{
+    position: absolute;
+    top:calc(50% - 100px);
+    left:calc(50% - 200px);
+}
+#noData h5{
+    background-color: white;
+    color: black;
+    width:100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#noData>div{
+    display: flex;
+    justify-content:center;
+}
+#noData a{
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    background-color:#e2772b;
+    border-radius: 10px;
+    padding:5px 0;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+    margin-right: 20px;
+}
+#noData a:hover{
+    text-decoration: none;
+    color:black;
+    background-color: #ffba5d;
+}
+
+//================訂單查詢-種類切換紐=========================
+#contentM main{
+    margin:20px 25px;
+}
+.tag{
+    font-size:1em;
+    border-radius: 20px;
+    color: white;
+    letter-spacing: 0.05em;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #b1b1b1;
+}
